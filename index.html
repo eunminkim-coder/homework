@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- style css 불러오기 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 구글 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet" />
+    <!-- 외부js 연결 -->
+    <script type="text/javascript" src="event.js"></script>
+    <!-- jquery 연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <title>원페이지 쇼핑몰</title>
+</head>
+
+<body>
+    <div class="imgPants">
+        <p>
+            <img src="http://www.jogunshop.com/shopimages/jogunshop/040001000055.gif?1556669666" alt="바지" height="400px"
+                width="450px" />
+        </p>
+        <div class="middle">
+            <span id="product01">상품명 :조건 스파바지</span>
+            <span class="detail01"> 가격 : 15,000원 / 1개</span>
+        </div>
+        <p>
+            기장도 잘 맞고dsdfsd진짜 예뻐요. 조군샵에서는 믿고
+            바지살<br />
+            수 있습니다~dfsaf아이보리나 블랙으로 다른 색상도 구매할까 생각중이에요.
+        </p>
+        <div class="order">
+            <form class="purchase">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">주문자 성함</label>
+                    <input type="text" class="form-control" id="csName" aria-describedby="emailHelp"
+                        required />
+                </div>
+                <label for="Input proIndex">수량 선택</label>
+                    <select name="index" id="proIndex">
+                        <option value="1개">1개</option>
+                        <option value="품절">품절</option>
+                    </select>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">주소</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1
+              required" />
+                        <label for="exampleInputPassword1" id="phone">전화번호</label>
+                        <input type="texr" class="form-control" id="exampleInputPassword1
+              required" />
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="prodCheck"" />
+                        <label class="form-check-label" for="exampleCheck1">상기 주문내역을 확인했습니다.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="checkBox(); noSpace();">주문하GI</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
